@@ -18,64 +18,11 @@ higer inflow counts).
 The description of the workflow to produce a spatial hexagon grid analysis can be found 
 in the following R-code.
 
-# create hexagon grid file
-# shapefile Belgium
-study_area <- getData("GADM", country = "BEL", level = 0) %>% 
-  disaggregate %>% 
-  geometry
-class(study_area)
-summary(study_area)
-plot(study_area)
+1. Study area and data description
 
-# cleaning up and remove polygons other than the main polygon of Belgium
-study_area <- sapply(study_area@polygons, slot, "area") %>% 
-  {which(. == max(.))} %>% 
-  study_area[.]
-plot(study_area)
-plot(study_area, col = "grey50", bg = "light blue", axes = TRUE)
 
-proj4string(study_area)
-# reproject into UTM
-study_area_utm <- spTransform(study_area,CRS("+proj=lcc +lat_1=51.16666723333333 +lat_2=49.8333339 +lat_0=90 +lon_0=4.367486666666666 +x_0=150000.013 +y_0=5400088.438 +ellps=intl +towgs84=106.869,-52.2978,103.724,-0.33657,0.456955,-1.84218,1 +units=m +no_defs"))
-plot(study_area_utm)
-proj4string(study_area_utm)
-summary(study_area_utm)
 
-# hexagonal grid with clipping
-# make_grid() function
-make_grid <- function(x, cell_diameter, cell_area, clip = FALSE) {
-  if (missing(cell_diameter)) {
-    if (missing(cell_area)) {
-      stop("Must provide cell_diameter or cell_area")
-    } else {
-      cell_diameter <- sqrt(2 * cell_area / sqrt(3))
-    }
-  }
-  ext <- as(extent(x) + cell_diameter, "SpatialPolygons")
-  projection(ext) <- projection(x)
-  # generate array of hexagon centers
-  g <- spsample(ext, type = "hexagonal", cellsize = cell_diameter, 
-                offset = c(0.5, 0.5))
-  # convert center points to hexagons
-  g <- HexPoints2SpatialPolygons(g, dx = cell_diameter)
-  # clip to boundary of study area
-  if (clip) {
-    g <- gIntersection(g, x, byid = TRUE)
-  } else {
-    g <- g[x, ]
-  }
-  # clean up feature IDs
-  row.names(g) <- as.character(1:length(g))
-  return(g)
-}
 
-# 2 km x 2 km hexagonal grid with clipping
-hex_grid22 <- make_grid(study_area_utm, cell_area = 4000000, clip = TRUE)
-plot(study_area_utm, col = "grey50", bg = "light blue", axes = FALSE)
-plot(hex_grid22, border = "white", add = TRUE)
-box()
-class(hex_grid22)
-plot(hex_grid22)
 
 ![hexgrid_2kmx2km](https://github.com/emmolb/spatial_hexagon_mapping_inflow_Belgium/assets/34507394/2b1b29a0-ab36-433b-b166-1d635ede429d)
 

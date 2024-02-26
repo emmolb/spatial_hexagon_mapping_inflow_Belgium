@@ -31,6 +31,9 @@ hexagonal grid of points, each with a cell size of 2 km by 2 km.
 This point grid is then converted to a grid of polygons (we used a function developed
 by Matt Strimas-Mackey, see strimas.com/spatial/hexagonal_grids, january 2016).
 
+![hexgrid_2kmx2km](https://github.com/emmolb/spatial_hexagon_mapping_inflow_Belgium/assets/34507394/fc648999-554d-4e83-9a30-8663704d5361)
+
+
 Kriging interpolation.
 We have data that is aggregated by geographic boundaries (muncipalities).  But we haven't data
 across a continuous spectrum.  Therefore we need to interpolate the point data.

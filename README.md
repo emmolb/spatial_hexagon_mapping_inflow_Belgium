@@ -36,12 +36,15 @@ by Matt Strimas-Mackey, see strimas.com/spatial/hexagonal_grids, january 2016).
 
 Kriging interpolation.
 We have data that is aggregated by geographic boundaries (muncipalities).  But we haven't data
-across a continuous spectrum.  Therefore we need to interpolate the point data.
+across a continuous spectrum.  Therefore we need to interpolate the point data.  Interpolation
+is performed by using the kriging technique with an experimental variagram.  Kriging is a
+technique for spatial interpolation to estimate values (in this case of inflow) at unmeasured
+locations within a study area.  The variogram is a component of kriging that describes 
+the spatial variability of a variable over the study area.  It quantifies how the variance of
+the variable changes as the distance between sample points increases.  Once the variogram
+model s established, kriging can be used to predict values at unsampled locations.
 
 
-
-
-![hexgrid_2kmx2km](https://github.com/emmolb/spatial_hexagon_mapping_inflow_Belgium/assets/34507394/2b1b29a0-ab36-433b-b166-1d635ede429d)
 
 
 

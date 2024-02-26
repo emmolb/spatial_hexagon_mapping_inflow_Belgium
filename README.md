@@ -69,6 +69,22 @@ hex_grid22 <- make_grid(study_area_utm, cell_area = 4000000, clip = TRUE)
 plot(study_area_utm, col = "grey50", bg = "light blue", axes = FALSE)
 plot(hex_grid22, border = "white", add = TRUE)
 box()
-
 class(hex_grid22)
 plot(hex_grid22)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

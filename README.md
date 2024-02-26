@@ -44,6 +44,9 @@ the spatial variability of a variable over the study area.  It quantifies how th
 the variable changes as the distance between sample points increases.  Once the variogram
 model s established, kriging can be used to predict values at unsampled locations.
 
+![variogram_model_inflow](https://github.com/emmolb/spatial_hexagon_mapping_inflow_Belgium/assets/34507394/8ca3f6fd-d783-46a7-aafb-f29611bb500c)
+
+
 
 
 

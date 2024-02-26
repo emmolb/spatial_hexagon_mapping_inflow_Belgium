@@ -18,7 +18,12 @@ higer inflow counts).
 The description of the workflow to produce a spatial hexagon grid analysis can be found 
 in the following R-code.
 
+
 1. Study area and data description
+The data consists of 589 municipalities in Belgium which are treated as point observations of
+outflow, inflow and resident commute patterns of the active population (based on census data,
+2011).  
+
 
 
 

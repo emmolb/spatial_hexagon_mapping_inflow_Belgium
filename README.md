@@ -22,7 +22,9 @@ in the following R-code.
 1. Study area and data description
 The data consists of 589 municipalities in Belgium which are treated as point observations of
 outflow, inflow and resident commute patterns of the active population (based on census data,
-2011).  
+2011).  The map below gives a global view of the distribution of these commute patterns.
+
+![commuting_patterns_Belgium](https://github.com/emmolb/spatial_hexagon_mapping_inflow_Belgium/assets/34507394/5eadad6e-16a4-45d1-9d8b-b8db59916b70)
 
 
 

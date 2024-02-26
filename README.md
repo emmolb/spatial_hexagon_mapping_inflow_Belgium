@@ -77,9 +77,7 @@ box()
 class(hex_grid22)
 plot(hex_grid22)
 
-![hexagon_inflow](https://github.com/emmolb/spatial_hexagon_mapping_inflow_Belgium/assets/34507394/b0747a5b-4271-43d5-8820-2c8a77204efd)
-
-
+![hexgrid_2kmx2km](https://github.com/emmolb/spatial_hexagon_mapping_inflow_Belgium/assets/34507394/2b1b29a0-ab36-433b-b166-1d635ede429d)
 
 
 

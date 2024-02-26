@@ -18,14 +18,14 @@ higer inflow counts).
 The description of the workflow to produce a spatial hexagon grid analysis can be found 
 in the following R-code.
 
-Study area and data description
+Study area and data description.
 The data consists of 589 municipalities in Belgium which are treated as point observations of
 outflow, inflow and resident commute patterns of the active population (based on census data,
 2011).  The map below gives a global view of the distribution of these commute patterns.
 
 ![commuting_patterns_Belgium](https://github.com/emmolb/spatial_hexagon_mapping_inflow_Belgium/assets/34507394/5eadad6e-16a4-45d1-9d8b-b8db59916b70)
 
-Hexagonal grid
+Hexagonal grid.
 To generate a hexagonal grid of polygons convering the Belgian area, we first created a
 hexagonal grid of points, each with a cell size of 2 km by 2 km.
 This point grid is then converted to a grid of polygons (we used a function developed

@@ -77,7 +77,7 @@ box()
 class(hex_grid22)
 plot(hex_grid22)
 
-
+!(hexgrid)(https://imgur.com/a/p7I6ZAN)
 
 
 

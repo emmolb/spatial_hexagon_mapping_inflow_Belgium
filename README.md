@@ -79,6 +79,9 @@ plot(hex_grid22)
 
 !(hexgrid)(https://imgur.com/a/p7I6ZAN)
 
+![hexagon_inflow](https://github.com/emmolb/spatial_hexagon_mapping_inflow_Belgium/assets/34507394/b0747a5b-4271-43d5-8820-2c8a77204efd)
+
+
 
 
 

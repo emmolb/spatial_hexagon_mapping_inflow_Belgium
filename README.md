@@ -10,3 +10,5 @@ apply a spatial overlay operation to map data points into the hexagonal structur
 to create an interpolated surface that calculates predicted values over areas where points do not exist and convert 
 these values to a raster surface.  This can be used to create a map where each hexagon represents a geographical area 
 that is shaded or coloured based on the commute data (i.e. darker shades might indicate higer inflow counts). 
+
+The description of the workflow to produce a spatial hexagon grid analysis can be found in the following R-code.

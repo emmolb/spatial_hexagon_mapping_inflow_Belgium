@@ -26,7 +26,22 @@ outflow, inflow and resident commute patterns of the active population (based on
 
 ![commuting_patterns_Belgium](https://github.com/emmolb/spatial_hexagon_mapping_inflow_Belgium/assets/34507394/5eadad6e-16a4-45d1-9d8b-b8db59916b70)
 
+2. Hexgrid grid.
+To generate a hexagonal grid of polygons convering the Belgian area, we first created a
+hexagonal grid of points, each with a cell size of 2 km by 2 km.
+This point grid is than converted to a grid of polygons (we used a function developed
+by Matt Strimas-Mackey, see strimas.com/spatial/hexagonal_grids, january 2016).
 
+
+
+
+
+
+
+
+3.4.  Kriging interpolation.
+We have data that is aggregated by geographic boundaries (muncipalities).  But we haven't data
+across a continuous spectrum.  Therefore we need to interpolate the point data.
 
 
 

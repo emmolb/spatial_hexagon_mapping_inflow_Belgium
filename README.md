@@ -76,11 +76,7 @@ plot(hex_grid22, border = "white", add = TRUE)
 box()
 class(hex_grid22)
 plot(hex_grid22)
-
-![Image description](https://github.com/emmolb/spatial_hexagon_mapping_Belgium/blob/main/hexgrid_2kmx2km.png)
-
-
-
+![hexgrid](https://www.github.com/emmolb/spatial_hexagon_mapping_inflow_Belgium/blob/main/hexgrid2kmx2km.png)
 
 
 

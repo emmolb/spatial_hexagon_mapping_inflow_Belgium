@@ -47,11 +47,13 @@ model s established, kriging can be used to predict values at unsampled location
 ![variogram_model_inflow](https://github.com/emmolb/spatial_hexagon_mapping_inflow_Belgium/assets/34507394/8ca3f6fd-d783-46a7-aafb-f29611bb500c)
 
 Kriging was performed for a fine grid and the kriged values of inflow ware generated in
-a raster format.  
+a raster format.  The map below reveals that the interpolated values of kriging are highest 
+in the region of Brussels capital.  In general, inflow is highest in urban areas.
 
 ![levelplot_interpolation_inflow_ok](https://github.com/emmolb/spatial_hexagon_mapping_inflow_Belgium/assets/34507394/c4a8769f-d4a6-4c19-aa2d-d4f32f68e175)
 
-
+Finally, the values of inflow for each grid cell of the hexagon grid can be extracted
+from the raster.  
 
 
 

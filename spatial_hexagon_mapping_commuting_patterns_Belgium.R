@@ -34,7 +34,6 @@ study_area_utm <- spTransform(study_area,CRS("+proj=lcc +lat_1=51.16666723333333
 plot(study_area_utm)
 proj4string(study_area_utm)
 summary(study_area_utm)
-
 # hexagonal grid with clipping
 # make_grid() function
 make_grid <- function(x, cell_diameter, cell_area, clip = FALSE) {

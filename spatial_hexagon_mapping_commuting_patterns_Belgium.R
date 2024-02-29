@@ -1,5 +1,5 @@
 # Spatial hexagon mapping of commute patterns in Belgium
-setwd("c:/R/Rdata")
+setwd( )
 library(dplyr)
 library(tidyr)
 library(sp)

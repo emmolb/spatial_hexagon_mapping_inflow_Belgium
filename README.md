@@ -49,7 +49,6 @@ model s established, kriging can be used to predict values at unsampled location
 Kriging was performed for a fine grid and the kriged values of inflow ware generated in
 a raster format.  
 
-![contour_plot](https://github.com/emmolb/spatial_hexagon_mapping_inflow_Belgium/assets/34507394/0923a5d6-b158-455c-863b-7b8e1ea2ce59)
 ![levelplot_interpolation_inflow_ok](https://github.com/emmolb/spatial_hexagon_mapping_inflow_Belgium/assets/34507394/c4a8769f-d4a6-4c19-aa2d-d4f32f68e175)
 
 

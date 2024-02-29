@@ -55,6 +55,7 @@ in the region of Brussels capital.  In general, inflow is highest in urban areas
 Finally, the values of inflow for each grid cell of the hexagon grid can be extracted
 from the raster.  
 
+![hexagon_map_inflow](https://github.com/emmolb/spatial_hexagon_mapping_inflow_Belgium/assets/34507394/55fecf83-87dc-47f2-aae4-6842853bf276)
 
 
 

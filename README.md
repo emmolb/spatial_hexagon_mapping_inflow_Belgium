@@ -16,7 +16,7 @@ that is shaded or coloured based on the commute data (i.e. darker shades might i
 higer inflow counts). 
 
 The description of the workflow to produce a spatial hexagon grid analysis can be found 
-in the following R-code.
+in the attached R-code.
 
 Study area and data description.
 The data consists of 589 municipalities in Belgium which are treated as point observations of
